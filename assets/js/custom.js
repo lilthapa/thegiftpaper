@@ -3,13 +3,6 @@ jQuery( document ).ready(function( $ ) {
 
 	"use strict";
 
-
-    
-        $(function() {
-            $( "#tabs" ).tabs();
-        });
-
-
         // Page loading animation
 
         $("#preloader").animate({
@@ -122,22 +115,6 @@ jQuery( document ).ready(function( $ ) {
                 }
             });
         }
-
-        $(".Modern-Slider").slick({
-            autoplay:true,
-            autoplaySpeed:10000,
-            speed:600,
-            slidesToShow:1,
-            slidesToScroll:1,
-            pauseOnHover:false,
-            dots:true,
-            pauseOnDotsHover:true,
-            cssEase:'linear',
-           // fade:true,
-            draggable:false,
-            prevArrow:'<button class="PrevArrow"></button>',
-            nextArrow:'<button class="NextArrow"></button>', 
-        });
 
         $('.filters ul li').click(function(){
         $('.filters ul li').removeClass('active');
