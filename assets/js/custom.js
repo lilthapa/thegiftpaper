@@ -12,7 +12,7 @@ jQuery( document ).ready(function( $ ) {
                 $("#preloader").css("visibility", "hidden").fadeOut();
             }, 300);
         });
-        
+
 
         $(window).scroll(function() {
           var scroll = $(window).scrollTop();
@@ -119,20 +119,23 @@ jQuery( document ).ready(function( $ ) {
         $('.filters ul li').click(function(){
         $('.filters ul li').removeClass('active');
         $(this).addClass('active');
-          
+
           var data = $(this).attr('data-filter');
           $grid.isotope({
             filter: data
           })
         });
 
-        var $grid = $(".grid").isotope({
-          itemSelector: ".all",
-          percentPosition: true,
-          masonry: {
-            columnWidth: ".all"
-          }
-        })
+        var $grid = $('.grid').imagesLoaded( function() {
+          var $grid = $(".grid").isotope({
+            itemSelector: ".all",
+            percentPosition: true,
+            masonry: {
+              columnWidth: ".all"
+            }
+          })
+        });
+
         $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
 
         $('.accordion a').click(function(j) {
@@ -151,5 +154,5 @@ jQuery( document ).ready(function( $ ) {
 
             j.preventDefault();
         });
- 
+
 });
