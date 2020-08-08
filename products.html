@@ -31,7 +31,6 @@
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
 
   </head>
 
@@ -263,9 +262,20 @@
 
     <!-- Additional Scripts -->
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/owl.js"></script>
     <script src="assets/js/isotope.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+
+    <script>
+      var $grid = $('.grid').imagesLoaded( function() {
+        var $grid = $(".grid").isotope({
+          itemSelector: ".all",
+          percentPosition: true,
+          masonry: {
+            columnWidth: ".all"
+          }
+        })
+      });
+    </script>
 
   </body>
 

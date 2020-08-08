@@ -126,16 +126,6 @@ jQuery( document ).ready(function( $ ) {
           })
         });
 
-        var $grid = $('.grid').imagesLoaded( function() {
-          var $grid = $(".grid").isotope({
-            itemSelector: ".all",
-            percentPosition: true,
-            masonry: {
-              columnWidth: ".all"
-            }
-          })
-        });
-
         $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
 
         $('.accordion a').click(function(j) {
