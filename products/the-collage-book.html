@@ -3,6 +3,8 @@
 
   <head>
 
+    <meta charset="utf-8">
+
        <!-- Global site tag (gtag.js) - Google Analytics -->
                       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174677160-1"></script>
                       <script>
@@ -21,7 +23,7 @@
 <meta property="og:description" content="Check out the best handmade unique gifts for your BFF and loved ones. You will admire our products once you check out them." />
 
 
-    <meta charset="utf-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -40,11 +42,21 @@
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="../assets/css/fontawesome.css">
     <link rel="stylesheet" href="../assets/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
     <style type="text/css">
       .best-features {
         margin-top: 0px;
         padding-top: 120px;
       }
+
+.numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
     </style>
   </head>
 
@@ -117,7 +129,21 @@
           </div>
           <div class="col-md-6">
             <div class="right-image">
-              <img src="../assets/images/product_9.jpg" alt="">
+              
+
+              <img src="../assets/images/the-collage-book-1large.jpg" onclick="changeimage(0);" alt="">
+            </div>
+            <div class="owl-carousel owl-theme pt-2">
+              <img class="item" onclick="changeimage(0);" src="../assets/images/the-collage-book-1large.jpg" alt="">
+              <img class="item" onclick="changeimage(1);" src="../assets/images/the-collage-book-2large.jpg" alt="">
+              <img class="item" onclick="changeimage(2);" src="../assets/images/the-collage-book-3large.jpg" alt="">
+              <img class="item" onclick="changeimage(3);" src="../assets/images/the-collage-book-4large.jpg" alt="">
+              <img class="item" onclick="changeimage(4);" src="../assets/images/the-collage-book-5large.jpg" alt="">
+              <img class="item" onclick="changeimage(5);" src="../assets/images/the-collage-book-6large.jpg" alt="">
+              <img class="item" onclick="changeimage(6);" src="../assets/images/the-collage-book-7large.jpg" alt="">
+              <img class="item" onclick="changeimage(7);" src="../assets/images/the-collage-book-8large.jpg" alt="">
+
+
             </div>
           </div>
         </div>
@@ -161,6 +187,75 @@
     </footer>
 
 
+<div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog" style="padding-top:7%">
+        <div class="modal-content">
+          <div class="modal-body"  style="padding:0px;">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+              </ol>
+                
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="numbertext">1 / 8</div>
+                  <img class="d-block w-100" src="../assets/images/the-collage-book-1large.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <div class="numbertext">2 / 8</div>
+                  <img class="d-block w-100" src="../assets/images/the-collage-book-2large.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <div class="numbertext">3 / 8</div>
+                  <img class="d-block w-100" src="../assets/images/the-collage-book-3large.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <div class="numbertext">4 / 8</div>
+                  <img class="d-block w-100" src="../assets/images/the-collage-book-4large.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <div class="numbertext">5 / 8</div>
+                  <img class="d-block w-100" src="../assets/images/the-collage-book-5large.jpg" alt="">
+                </div>
+                 <div class="carousel-item">
+                  <div class="numbertext">6 / 8</div>
+                  <img class="d-block w-100" src="../assets/images/the-collage-book-6large.jpg" alt="">
+                </div>
+                 <div class="carousel-item">
+                  <div class="numbertext">7 / 8</div>
+                  <img class="d-block w-100" src="../assets/images/the-collage-book-7large.jpg" alt="">
+                </div>
+                 <div class="carousel-item">
+                  <div class="numbertext">8 / 8</div>
+                  <img class="d-block w-100" src="../assets/images/the-collage-book-8large.jpg" alt="">
+                </div>
+              </div>
+
+
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev gradient-right" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next gradient-left" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -168,6 +263,21 @@
 
     <!-- Additional Scripts -->
     <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/owl.js"></script>
+
+    <script>
+      $('.owl-carousel').owlCarousel({
+        margin:10,
+        items:4
+      })
+
+      function changeimage(no){
+        $('#myModal').modal();
+        $('.carousel').carousel(no);
+      }
+    </script>
+
+
 
   </body>
 
